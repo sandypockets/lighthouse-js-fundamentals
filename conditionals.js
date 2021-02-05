@@ -31,7 +31,7 @@ if (cold) {
 console.log("Now you're ready to go outside!");
 
 
-console.log('\n') //Adding a paragraph break to help differentiate between the two programs while comparing outputs.
+console.log('\n'); //Adding a paragraph break to help differentiate between the two programs while comparing outputs.
 
 //Program 2
 //What you should wear based on the temperature
@@ -49,3 +49,39 @@ if (temperature < 0) {
 }
 
 console.log("Now you're ready to go outside!");
+
+console.log('\n');
+
+//Program 3 - More conditionals!
+//Checks whether person is BOTH a citizen, and legal voting age. 
+console.log('-Third Program-');
+const isCitizen = true;
+const age = 26;
+
+if (isCitizen && age > 18) {
+  console.log("You are eligible to vote.");
+}
+
+console.log('\n');
+
+//Program 4
+//Checks if the temperature is too hostile to go outside.
+//The temperature variable from above is being reused, so the current temperature is 1
+console.log('-Fourth Program-');
+if (temperature < -40 || temperature > 40) {
+  console.log("Maybe going outside isn't such a great idea…");
+} else {
+  console.log("Going outside is a great idea!");
+}
+
+console.log('\n');
+
+//Program 5
+//Checks that it is not raining, and informs the user they don't need an umbrella. 
+console.log('-Fifth Program-');
+if (!raining) {
+  console.log("Leave your umbrella at home!");
+} else {
+  console.log("You're going to need your umbrella today!");
+}
+
