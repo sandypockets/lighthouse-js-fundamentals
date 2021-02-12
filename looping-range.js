@@ -1,11 +1,11 @@
 //The function takes 3 integer parameters: start, end, and step.
-//The function should return an array of numbers from start to end counting by step.
+//The function should return an array of numbers from start to end incrementing by step.
 
 function range(start, end, step) {
   let stepCounts = [];
-  if (start < 0 || !end || !step) {
+  if (!end || !step) {
     stepCounts = [];
-  } else {
+  } else if (start < end) {
     for (let i = start; i <= end; i = i + step) {
       stepCounts.push(i);
     }
